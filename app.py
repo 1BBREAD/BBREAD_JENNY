@@ -1,11 +1,4 @@
 import streamlit as st
-import base64
-
-def img_to_base64(file_path):
-    with open(file_path, "rb") as f:
-        data = f.read()
-    return base64.b64encode(data).decode("utf-8")
-
 
 # 이미지 캐시 삭제
 st.cache_data.clear()  # Streamlit 1.18 이상
@@ -37,7 +30,6 @@ photo2_url = "https://drive.google.com/uc?id=여기에_파일ID3"
 # 음악 파일 (mp3)
 music_url = "https://drive.google.com/uc?id=여기에_파일ID4"
 
-b64 = img_to_base64("photo.jpg")
 st.markdown(f'<img src="data:image/jpeg;base64,{b64}" style="width:100%;border-radius:20px;">', unsafe_allow_html=True)
 
 # 인트로 사진
