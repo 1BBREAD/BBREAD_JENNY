@@ -1,5 +1,8 @@
 import streamlit as st
 
+# 이미지 캐시 삭제
+st.cache_data.clear()  # Streamlit 1.18 이상
+
 # 페이지 설정
 st.set_page_config(page_title="우리의 기념일 💕", page_icon="💖", layout="centered")
 
