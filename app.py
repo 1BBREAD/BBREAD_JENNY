@@ -1,4 +1,11 @@
 import streamlit as st
+import base64
+
+def img_to_base64(file_path):
+    with open(file_path, "rb") as f:
+        data = f.read()
+    return base64.b64encode(data).decode("utf-8")
+
 
 # 이미지 캐시 삭제
 st.cache_data.clear()  # Streamlit 1.18 이상
@@ -23,12 +30,15 @@ st.markdown("<div class='subtitle'>2024.10.13 - 2025.10.13</div>", unsafe_allow_
 
 # 📸 Google Drive 이미지 불러오기
 # 🔹 공유한 Google Drive 파일의 ID를 이용 (예: https://drive.google.com/file/d/파일ID/view)
-main_photo_url = "https://drive.google.com/uc?id=1sB9pyb_w2yqXq72KDGEuT-VgiKrq-rW_"
+main_photo_url = "https://drive.google.com/u/0/drive-viewer/AKGpihZaIg1rxzRjDX8LjZ-VbBEi51sJo7ZczS4Q3KCxVzQ6_bg_JjPvPGH1kzLG8UoI5bJg-Z7j2vD96-6gtV8K-u7I4j9Se9G9ups=s1600-rw-v1"
 photo1_url = "https://drive.google.com/uc?id=여기에_파일ID2"
 photo2_url = "https://drive.google.com/uc?id=여기에_파일ID3"
 
 # 음악 파일 (mp3)
 music_url = "https://drive.google.com/uc?id=여기에_파일ID4"
+
+b64 = img_to_base64("photo.jpg")
+st.markdown(f'<img src="data:image/jpeg;base64,{b64}" style="width:100%;border-radius:20px;">', unsafe_allow_html=True)
 
 # 인트로 사진
 st.image(main_photo_url, caption="우리의 첫 만남 💖", use_container_width=True)
