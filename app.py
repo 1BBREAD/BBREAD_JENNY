@@ -30,8 +30,6 @@ photo2_url = "https://drive.google.com/uc?id=여기에_파일ID3"
 # 음악 파일 (mp3)
 music_url = "https://drive.google.com/uc?id=여기에_파일ID4"
 
-st.markdown(f'<img src="data:image/jpeg;base64,{b64}" style="width:100%;border-radius:20px;">', unsafe_allow_html=True)
-
 # 인트로 사진
 st.image(main_photo_url, caption="우리의 첫 만남 💖", use_container_width=True)
 
