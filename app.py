@@ -24,7 +24,9 @@ st.markdown("<div class='subtitle'>2024.10.13 - 2025.10.13</div>", unsafe_allow_
 # 📸 Google Drive 이미지 불러오기
 # 🔹 공유한 Google Drive 파일의 ID를 이용 (예: https://drive.google.com/file/d/파일ID/view)
 # main_photo_url = "https://drive.google.com/u/0/drive-viewer/AKGpihZaIg1rxzRjDX8LjZ-VbBEi51sJo7ZczS4Q3KCxVzQ6_bg_JjPvPGH1kzLG8UoI5bJg-Z7j2vD96-6gtV8K-u7I4j9Se9G9ups=s1600-rw-v1"
-main_photo_url = "https://drive.google.com/uc?export=view&id=1sB9pyb_w2yqXq72KDGEuT-VgiKrq-rW_"
+
+# google photo
+main_photo_url = "https://lh3.googleusercontent.com/pw/AP1GczNRX1dpYswv47pQMlY2nBjD8F_AECpIe2fkXdm3IAlUysbAHDIHFJnt1jh1IXoufK804rqGBWyjrO6SE4I2t9TqPeed1PODfplJQuBO4QoeY6eW0PzremVZyLJJt07XBWrfiQkrXPSy53vqA33Krgbp=w1010-h1346-s-no-gm?authuser=0"
 photo1_url = "https://drive.google.com/uc?id=여기에_파일ID2"
 photo2_url = "https://drive.google.com/uc?id=여기에_파일ID3"
 
