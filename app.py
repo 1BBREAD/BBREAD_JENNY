@@ -20,7 +20,7 @@ st.markdown("<div class='subtitle'>2024.10.13 - 2025.10.13</div>", unsafe_allow_
 
 # 📸 Google Drive 이미지 불러오기
 # 🔹 공유한 Google Drive 파일의 ID를 이용 (예: https://drive.google.com/file/d/파일ID/view)
-main_photo_url = "https://drive.google.com/uc?id=여기에_파일ID1"
+main_photo_url = "https://drive.google.com/uc?id=1sB9pyb_w2yqXq72KDGEuT-VgiKrq-rW_"
 photo1_url = "https://drive.google.com/uc?id=여기에_파일ID2"
 photo2_url = "https://drive.google.com/uc?id=여기에_파일ID3"
 
