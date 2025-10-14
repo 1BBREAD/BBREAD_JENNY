@@ -43,6 +43,7 @@ st.markdown(f"""
   <source src="{music_url}" type="audio/mpeg">
 </audio>
 """, unsafe_allow_html=True)
+
 ############음식
 st.markdown("""
 <style>
@@ -95,12 +96,12 @@ caps = [
 with st.expander("🐷🐷🐷"):
     html = '<div class="gallery">'
     for img, cap in zip(imgs, caps):
-        html += f'''
+        html += f"""
         <div class="gallery-item">
           <img src="{img}" alt="{cap}">
           <div class="caption">{cap}</div>
         </div>
-        '''
+        """
     html += '</div>'
     st.markdown(html, unsafe_allow_html=True)
     
