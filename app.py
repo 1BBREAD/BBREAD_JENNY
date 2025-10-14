@@ -43,8 +43,31 @@ st.markdown(f"""
   <source src="{music_url}" type="audio/mpeg">
 </audio>
 """, unsafe_allow_html=True)
+############음식
+st.markdown("""
+<style>
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+}
+.gallery-item {
+  text-align: center;
+}
+.gallery-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+.caption {
+  font-size: 0.9em;
+  margin-top: 4px;
+}
+</style>
+""", unsafe_allow_html=True)
 
-col1, col2 = st.columns(2)
 # 타임라인
 imgs = [
 "https://lh3.googleusercontent.com/pw/AP1GczMgGI7BMMSzXAlzC6lrRo4fzdkVOFBWJf9V_XXH38pY8ZK1K1chmvaT3nbE_rJLDm4CClv8uxAbdqoslQgB4s-uVSaMmyEp4uCTWJUYWUXKlfVZm_1Ka1WFfzX44HpBF3EA15XtmEOlfwHt2Bqxbf6k=w1346-h1346-s-no-gm?authuser=0"
@@ -70,15 +93,17 @@ caps = [
 
 # expander로 감싸기
 with st.expander("🐷🐷🐷"):
-    # 3개씩 한 줄로 표시
-    n_cols = 3
-    for i in range(0, len(imgs), n_cols):
-        cols = st.columns(n_cols)
-        for j, col in enumerate(cols):
-            if i + j < len(imgs):
-                with col:
-                    st.image(imgs[i + j], caption=caps[i + j], use_container_width=True)
-                    
+    html = '<div class="gallery">'
+    for img, cap in zip(imgs, caps):
+        html += f'''
+        <div class="gallery-item">
+          <img src="{img}" alt="{cap}">
+          <div class="caption">{cap}</div>
+        </div>
+        '''
+    html += '</div>'
+    st.markdown(html, unsafe_allow_html=True)
+    
 col1, col2 = st.columns(2)
 with col1:
     st.image(photo1_url, use_container_width=True)
