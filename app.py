@@ -49,8 +49,9 @@ st.markdown("""
 <style>
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);  /* 한 줄에 3장씩 */
+  gap: 15px;
+  margin-top: 15px;
 }
 .gallery-item {
   text-align: center;
@@ -58,16 +59,18 @@ st.markdown("""
 .gallery-item img {
   width: 100%;
   height: 250px;
-  object-fit: cover;
+  object-fit: cover;   /* 비율 유지하면서 동일한 높이 */
   border-radius: 15px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 .caption {
   font-size: 0.9em;
-  margin-top: 4px;
+  color: #555;
+  margin-top: 5px;
 }
 </style>
 """, unsafe_allow_html=True)
+
 
 # 타임라인
 imgs = [
@@ -94,16 +97,18 @@ caps = [
 
 # expander로 감싸기
 with st.expander("🐷🐷🐷"):
-    html = '<div class="gallery">'
+    html_blocks = ['<div class="gallery">']
     for img, cap in zip(imgs, caps):
-        html += f"""
+        html_blocks.append(f'''
         <div class="gallery-item">
-          <img src="{img}" alt="{cap}">
-          <div class="caption">{cap}</div>
+            <img src="{img}" alt="{cap}">
+            <div class="caption">{cap}</div>
         </div>
-        """
-    html += '</div>'
-    st.markdown(html, unsafe_allow_html=True)
+        ''')
+    html_blocks.append('</div>')
+
+    gallery_html = "\n".join(html_blocks)
+    st.markdown(gallery_html, unsafe_allow_html=True)
     
 col1, col2 = st.columns(2)
 with col1:
