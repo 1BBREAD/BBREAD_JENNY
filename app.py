@@ -46,7 +46,7 @@ st.markdown(f"""
 
 # 타임라인
 # st.markdown("## 🐷🐷🐷")
-with st.expander("🐷🐷🐷""):
+with st.expander("🐷🐷🐷"):
     st.image("https://lh3.googleusercontent.com/pw/AP1GczMgGI7BMMSzXAlzC6lrRo4fzdkVOFBWJf9V_XXH38pY8ZK1K1chmvaT3nbE_rJLDm4CClv8uxAbdqoslQgB4s-uVSaMmyEp4uCTWJUYWUXKlfVZm_1Ka1WFfzX44HpBF3EA15XtmEOlfwHt2Bqxbf6k=w1346-h1346-s-no-gm?authuser=0", caption="첫 생일")
     st.image("https://lh3.googleusercontent.com/pw/AP1GczOYbjYPivgTvuxSSkJJPNNSuID-5_1WLMCQsU8C9xrAkbPikvOVKzJCFWTaGPUKmGGudujMMeFGyx_qscih1Q3nKTdXE_IyvHpdOq3jQ253nGEcvl1OtMyWemgDZKfG-BqbdFS-gqwnjUPRhy3DeSlb=w1346-h1346-s-no-gm?authuser=0")
 
