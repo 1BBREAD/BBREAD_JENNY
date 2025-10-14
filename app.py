@@ -44,25 +44,23 @@ st.markdown(f"""
 </audio>
 """, unsafe_allow_html=True)
 
+col1, col2 = st.columns(2)
 # 타임라인
 # st.markdown("## 🐷🐷🐷")
 with st.expander("🐷🐷🐷"):
-    col1, col2 = st.columns(2)
+
     with col1 : 
       st.image("https://lh3.googleusercontent.com/pw/AP1GczMgGI7BMMSzXAlzC6lrRo4fzdkVOFBWJf9V_XXH38pY8ZK1K1chmvaT3nbE_rJLDm4CClv8uxAbdqoslQgB4s-uVSaMmyEp4uCTWJUYWUXKlfVZm_1Ka1WFfzX44HpBF3EA15XtmEOlfwHt2Bqxbf6k=w1346-h1346-s-no-gm?authuser=0", caption="첫 생일")
     with col2 : 
       st.image("https://lh3.googleusercontent.com/pw/AP1GczOYbjYPivgTvuxSSkJJPNNSuID-5_1WLMCQsU8C9xrAkbPikvOVKzJCFWTaGPUKmGGudujMMeFGyx_qscih1Q3nKTdXE_IyvHpdOq3jQ253nGEcvl1OtMyWemgDZKfG-BqbdFS-gqwnjUPRhy3DeSlb=w1346-h1346-s-no-gm?authuser=0")
-        col1, col2 = st.columns(2)
     with col1 : 
       st.image("https://lh3.googleusercontent.com/pw/AP1GczNlnnp9YNYkc1o8iuaExpuA3VQ8W8O7yxW0oCLn1MOI2LDlIcT1UUwtD3g5aDaLR7ZbxQNOSnTz0MquAVHx_Yc9Eg-FgSnNOA5BGTFxGbEf8TRAKRtNuzPVd69P8PuFDasaZTj4z4l8E25jrUkF22pk=w1346-h1346-s-no-gm?authuser=0")
     with col2 : 
       st.image("https://lh3.googleusercontent.com/pw/AP1GczOf3qqrO7XK4BTj8hoJg3aDej59xVzTZj2JC2YsNfX4FwzRMoPsubYDcJRAOPIgz-bG2qRFQ4wJQotTjFhs-B9uiABujA57qNzfHPeeFiXRjwZ3-KWZJ8ZH6qfiBqqYUWl2TBY9_BrV7cMaoWYKKsE2=w1346-h1346-s-no-gm?authuser=0")
-    col1, col2 = st.columns(2)
     with col1 : 
       st.image("https://lh3.googleusercontent.com/pw/AP1GczOyAFjIqosqOVjIQ1QYU80gZPGwTxy8ymnS_oEdN-YafSdQVyE6ZK5bce0Zfpc2x8c_VWhM1JNymgBEUI2Hb6hWytL3KOmsO1a1rNLLqPgMjmtkN6XDA_tv9ERSjiVIsJqt_WJkXdxzNh1vFBWGhSsP=w1010-h1346-s-no-gm?authuser=0")
     with col2 : 
       st.image("https://lh3.googleusercontent.com/pw/AP1GczMOODThv19b7B7Xb_033pomtx-2PLN9NJCLetkbQTgxRCszQMZebYfVzv-Pkpo5hjF6fW2le55DhnYVgOYlnThH7j3fjoJrEgdsxxE8o8fE-wxVJyfkIoqUKNGOzS74OhEowdrh4WRjTXkRprcrv-jP=w1010-h1346-s-no-gm?authuser=0")
-    col1, col2 = st.columns(2)
     with col1 : 
       st.image("https://lh3.googleusercontent.com/pw/AP1GczOpZBMYz9__Si57_bLLdsLvXUeXks-T0A_MXCJv4VEhJV_Fhcys8XIFt_4R1PAEddDgiBYIbaN0V3bpLv6nIDCZE5vowxsNqGLhVyEmOxbsDGxFMIZyhtTI3PEEo-vmCZD8h3RRvSdqcxa7Ow2RpuIe=w1010-h1346-s-no-gm?authuser=0")
     with col2 : 
