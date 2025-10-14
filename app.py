@@ -4,7 +4,7 @@ import streamlit as st
 st.cache_data.clear()  # Streamlit 1.18 이상
 
 # 페이지 설정
-st.set_page_config(page_title="우리의 기념일 💕", page_icon="💖", layout="centered")
+st.set_page_config(page_title="💜우리의 기념일💚", page_icon="💖", layout="centered")
 
 # CSS 스타일
 st.markdown("""
@@ -18,15 +18,16 @@ body { background-color: #fff0f5; }
 """, unsafe_allow_html=True)
 
 # 🎉 제목
-st.markdown("<div class='title'>우리의 1주년 💕</div>", unsafe_allow_html=True)
-st.markdown("<div class='subtitle'>2024.10.13 - 2025.10.13</div>", unsafe_allow_html=True)
+st.markdown("<div class='title'>💜우리의 1주년💚</div>", unsafe_allow_html=True)
+st.markdown("<div class='subtitle'>2024.10.20 - 2025.10.20</div>", unsafe_allow_html=True)
 
 # 📸 Google Drive 이미지 불러오기
 # 🔹 공유한 Google Drive 파일의 ID를 이용 (예: https://drive.google.com/file/d/파일ID/view)
 # main_photo_url = "https://drive.google.com/u/0/drive-viewer/AKGpihZaIg1rxzRjDX8LjZ-VbBEi51sJo7ZczS4Q3KCxVzQ6_bg_JjPvPGH1kzLG8UoI5bJg-Z7j2vD96-6gtV8K-u7I4j9Se9G9ups=s1600-rw-v1"
 
 # google photo
-main_photo_url = "https://lh3.googleusercontent.com/pw/AP1GczNRX1dpYswv47pQMlY2nBjD8F_AECpIe2fkXdm3IAlUysbAHDIHFJnt1jh1IXoufK804rqGBWyjrO6SE4I2t9TqPeed1PODfplJQuBO4QoeY6eW0PzremVZyLJJt07XBWrfiQkrXPSy53vqA33Krgbp=w1010-h1346-s-no-gm?authuser=0"
+#main_photo_url = "https://lh3.googleusercontent.com/pw/AP1GczNRX1dpYswv47pQMlY2nBjD8F_AECpIe2fkXdm3IAlUysbAHDIHFJnt1jh1IXoufK804rqGBWyjrO6SE4I2t9TqPeed1PODfplJQuBO4QoeY6eW0PzremVZyLJJt07XBWrfiQkrXPSy53vqA33Krgbp=w1010-h1346-s-no-gm?authuser=0"
+main_photo_url = "https://lh3.googleusercontent.com/pw/AP1GczN7V-5Huymt8q5TjYN_hVjRlVQz7MUOJWXr0b7JEBK1FxHF-QkZfdZQklXiphbEmUImBIY27O3SAaJZMZHHlVKAFQyplxyEwtVNtxcWML3dpFP8WR2PdGXmQhJNec3l4DvrUItV8Zvta-rO1xJBksO4=w1523-h1142-s-no-gm?authuser=0"
 photo1_url = "https://drive.google.com/uc?id=여기에_파일ID2"
 photo2_url = "https://drive.google.com/uc?id=여기에_파일ID3"
 
@@ -34,7 +35,7 @@ photo2_url = "https://drive.google.com/uc?id=여기에_파일ID3"
 music_url = "https://drive.google.com/uc?id=여기에_파일ID4"
 
 # 인트로 사진
-st.image(main_photo_url, caption="우리의 첫 만남 💖", use_container_width=True)
+st.image(main_photo_url, caption="💖", use_container_width=True)
 
 # 배경음악
 st.markdown(f"""
@@ -44,7 +45,10 @@ st.markdown(f"""
 """, unsafe_allow_html=True)
 
 # 타임라인
-st.markdown("## 🌷 우리의 이야기")
+# st.markdown("## 🐷🐷🐷")
+with st.expander("🐷🐷🐷""):
+    st.image("https://lh3.googleusercontent.com/pw/AP1GczMgGI7BMMSzXAlzC6lrRo4fzdkVOFBWJf9V_XXH38pY8ZK1K1chmvaT3nbE_rJLDm4CClv8uxAbdqoslQgB4s-uVSaMmyEp4uCTWJUYWUXKlfVZm_1Ka1WFfzX44HpBF3EA15XtmEOlfwHt2Bqxbf6k=w1346-h1346-s-no-gm?authuser=0", caption="첫 생일")
+    st.image("https://lh3.googleusercontent.com/pw/AP1GczOYbjYPivgTvuxSSkJJPNNSuID-5_1WLMCQsU8C9xrAkbPikvOVKzJCFWTaGPUKmGGudujMMeFGyx_qscih1Q3nKTdXE_IyvHpdOq3jQ253nGEcvl1OtMyWemgDZKfG-BqbdFS-gqwnjUPRhy3DeSlb=w1346-h1346-s-no-gm?authuser=0")
 
 col1, col2 = st.columns(2)
 with col1:
