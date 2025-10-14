@@ -99,16 +99,17 @@ caps = [
 with st.expander("🐷🐷🐷"):
     html_blocks = ['<div class="gallery">']
     for img, cap in zip(imgs, caps):
-        html_blocks.append(f'''
-        <div class="gallery-item">
-            <img src="{img}" alt="{cap}">
-            <div class="caption">{cap}</div>
-        </div>
-        ''')
+        html_blocks.append(
+            '<div class="gallery-item">'
+            '<img src="' + img + '" alt="' + cap + '">'
+            '<div class="caption">' + cap + '</div>'
+            '</div>'
+        )
     html_blocks.append('</div>')
 
     gallery_html = "\n".join(html_blocks)
     st.markdown(gallery_html, unsafe_allow_html=True)
+
     
 col1, col2 = st.columns(2)
 with col1:
