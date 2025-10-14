@@ -113,14 +113,23 @@ with st.expander("🐷🐷🐷"):
     
 col1, col2 = st.columns(2)
 with col1:
-    st.image(photo1_url, use_container_width=True)
+    with st.expander("🐷🐷🐷"):
+        html_blocks = ['<div class="gallery">']
+        for img, cap in zip(imgs, caps):
+            html_blocks.append(
+                '<div class="gallery-item">'
+                '<img src="' + img + '" alt="' + cap + '">'
+                '<div class="caption">' + cap + '</div>'
+                '</div>'
+            )
+        html_blocks.append('</div>')
+        
+        gallery_html = "\n".join(html_blocks)
+        st.markdown(gallery_html, unsafe_allow_html=True)
 with col2:
     st.markdown("""
     <div class='message'>
-    첫 데이트 날의 설렘,  
-    아직도 그 순간이 선명하게 기억나.  
-    함께 웃고, 함께 걸었던 그 길이  
-    우리의 시작이었어 🌸
+    너와 함께 먹으면, 그 무엇도 미슐랭이야.
     </div>
     """, unsafe_allow_html=True)
 
