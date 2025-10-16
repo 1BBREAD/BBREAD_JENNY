@@ -18,7 +18,7 @@ body { background-color: #fff0f5; }
 """, unsafe_allow_html=True)
 
 # 🎉 제목
-st.markdown("<div class='title'>💜우리의 1주년💚</div>", unsafe_allow_html=True)
+st.markdown("<div class='title'>💜뎡.빵의 1주년💚</div>", unsafe_allow_html=True)
 st.markdown("<div class='subtitle'>2024.10.20 - 2025.10.20</div>", unsafe_allow_html=True)
 
 # 📸 Google Drive 이미지 불러오기
