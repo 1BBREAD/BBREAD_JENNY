@@ -40,15 +40,9 @@ st.image(main_photo_url, caption="💖", use_container_width=True)
 st.markdown("""<div class='message'>멀리 있으면 멀어서 보고 싶고,<br> 옆에 있으면 가까이서 보고 싶은 것.<br>
 그게 너다.  <br>- 원동연</div> """, unsafe_allow_html=True)
 
+# 배경음악
 with open("auido.mp3","rb") as f:
   st.audio(f.read(), format="auido/mp3")
-
-# 배경음악
-st.markdown(f"""
-<audio controls autoplay loop>
-  <source src="{music_url}" type="audio/mpeg">
-</audio>
-""", unsafe_allow_html=True)
 
 ############음식
 st.markdown("""
