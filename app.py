@@ -37,6 +37,9 @@ music_url = "https://drive.google.com/uc?id=여기에_파일ID4"
 # 인트로 사진
 st.image(main_photo_url, caption="💖", use_container_width=True)
 
+st.markdown("""<div class='message'>멀리 있으면 멀어서 보고 싶고, 옆에 있으면 가까이서 보고 싶은 것.
+\n그게 너다.  - 원동연</div> """, unsafe_allow_html=True)
+
 # 배경음악
 st.markdown(f"""
 <audio controls autoplay loop>
@@ -151,7 +154,7 @@ col1, col2 = st.columns([1,3])
 with col1:
     st.markdown("""
     <div class='message'>
-    인생은 네컷으로 담기엔 부족해
+    인생은 육천오백이십사컷쯤
     </div>
     """, unsafe_allow_html=True)
 with col2:
@@ -171,13 +174,73 @@ with col2:
 
 st.divider()
 
+imgs = [
+"https://lh3.googleusercontent.com/pw/AP1GczMrrqLxDwEBsH1g53o8y2wKJPqNMfZoIVls-jMXA4yffmvhlgkeRg9KPkh2wILQbCZ-2xfw46sihIWXCBvFzBoG-1juVhEptlnQR2BTGclbMYscscQAT1Q51sSNMgM7ebIp3rOHp_hX9wwGLOaaJFV_=w1010-h1346-s-no-gm?authuser=0"
+,"https://lh3.googleusercontent.com/pw/AP1GczM2jtRlP3ZO6fJDJJqXOM_7cSQrtFwhaiVc_PO_CRH1JTvy5KIJ59S3PUG4AcKMYVEbzjsDM_qboAVU4eltm05-okXikcSuGIf3M8_imp9b41ycu6dHNBuZvD68LBz3Opp5cVx4tS2pohse5EZjQzQy=w1277-h1277-s-no-gm?authuser=0"
+,"https://lh3.googleusercontent.com/pw/AP1GczO5YL1yzsdq9HdBVAxLKn5Kf7d_ozH2EpNFb1BSP7RVinoHJObJRaurrfxcy7hgkW9uPpQM2Ew1NMjifDTYylhKLQ5_7jG5IffsKgl8-ar6owypv1BoEAtcSIgAKzwSSjl3_t0kvvpvGDpw0LywqOyf=w1010-h1346-s-no-gm?authuser=0"
+,"https://lh3.googleusercontent.com/pw/AP1GczNLxN4FFlvi9CatPrD472wDurrlcSNdvC8Q-zvDDvSXWUjjmvLVrTemd094gexi3OhtITRBZNXSJKDce1o5P0BLPlbC2SizqCerraSoETNzFvnp22lp-gduTbxqXkqBVe5V3-b6feRQW7Yy8bA8h86V=w1010-h1346-s-no-gm?authuser=0"
+,"https://lh3.googleusercontent.com/pw/AP1GczO5RIobH-ny7ITTIfKfFz65KQQDxucHEtFPKkiG8ubkiCBdI2q-2zMyLXTaUeT3Garv80Wv4veYm27cijn-_Yae7RAG0-Uo3n3OUZY1k_uRmtx6MntM8iCQJmTVYkRP67B5tDb9CwKxglzqDLXEUth2=w1277-h1277-s-no-gm?authuser=0"
+,"https://lh3.googleusercontent.com/pw/AP1GczMQF480GUaXDGi7hJ67gNOTimVaVH-LtRTQZG1UozX8-dLikm_Q1zam5c8_MN2tc6zY163pRYjCEAf6vB7E4csuNZyiu-8xB-DxdCLI48yOI6BIi_Kc4Gd_DgEN5AWmVOPDB3LyvkiAibqGrI2S-SqC=w1010-h1346-s-no-gm?authuser=0"
+,"https://lh3.googleusercontent.com/pw/AP1GczMOboI6xIdUzCS9JcwODukZVqMJ9butsnbFv_f7xXoBKrOigDzQ7Oh8milPntIU9ASTcqrKXxJHxVMgb6SHMkDcRD2MPplDRLjcwRBcddUdqWk67O6nPoTwXqG6DKRg1KXwKAPcDNibW4phta-F-faq=w1277-h1277-s-no-gm?authuser=0"
+,"https://lh3.googleusercontent.comhttps//lh3.googleusercontent.com/pw/AP1GczNI8f-89e2JCnqx1mdnY7ckt7H44MbmCZx_Y2dMSr_WQsYc4Pr9PX10KPztgsV3BFwlEpZFyRdy7V6yZ4aLr9R8i98HV3EZ1Qv12MsxTrMPjqsUq_PdD-pZt9NuM0NVSPx_RtW5ydTj2yvRNn_izoNq=w758-h1346-s-no-gm?authuser=0"
+,"https://lh3.googleusercontent.com/pw/AP1GczMkp0nC9cXu_KcWfo36XOh_ze7RBwoBWqFC1c-rfdLIs1vSlUxo0dD2NZhlV981auoaVJsdfpJL4ls_fswgxcxfND9qMM6MI9yEaK2LFHe-gttzkhWlcEH7aJH-fzfQrYfCZDR_aPzHIBVbMKSKstcU=w1277-h957-s-no-gm?authuser=0"
+,"https://lh3.googleusercontent.com/pw/AP1GczMkp0nC9cXu_KcWfo36https://lh3.googleusercontent.com/pw/AP1GczOr_7sLp6928iFjT2fsHk4KJ-DBj9K_-czI_dAwOxidM6Jo4WqnMzhYVnGm1q-LTgu1V-4n93sIYId5e2l223IZdURAa-mKfihGgQCcjdrTuLAMTuhWrGWgYSaPzdIzVhaPLcaooNr06pu9g2A9Y56i=w1277-h1277-s-no-gm?authuser=0"
+,"https://lh3.googleusercontent.com/pw/AP1GczN9h9jpJNXpgxC1KzWjR96ul4DtAZNChXrbgCLtstb-Qr04JewGVVhDeCbMcAW4B36fx246FwA_OJdgfXNUGExuMYnbccQuXeD_ljipSXgubPrvv2OxrbJH_0d9nn-bj_Uk43fKREgbDwOL34Sa7a1u=w1010-h1346-s-no-gm?authuser=0"
+,"https://lh3.googleusercontent.com/pw/AP1GczNsL1yPv5MqUYk-b1IMAgicjDSPWeNIUsSyZ9fLBCGCForvMEM1MLJNT7ZHTGLWiHrWIdQQFv6uvgcdBGbpFz9rxvGAnJJnAiwafJLgArnmHZ_ujDFIHf5iT1Ptc4677Q7AU050GUU12zQst73jO6w-=w1010-h1346-s-no-gm?authuser=0"
+,"https://lh3.googleusercontent.com/pw/AP1GczO2Hv5YHuKYi-czyjXBrCKO9y9zxojzELSF4OuvkjEr2YGwD12fTu5lu58zWv2-zrUsryI6Swdfl_JA2RhSk0QlN9qRtJ0rWaZAnmybd696hejgFoOtbDPRVfHGylyIj1AwB5C_V8sI1HMvEp9DWwIR=w1277-h957-s-no-gm?authuser=0"
+,"https://lh3.googleusercontent.com/pw/AP1GczOEtydW9CnGwc-T5QHT_hFtcedsYF3FPh1CzdRTUzsdpQ9EeajwkAnqBbFBX4rK5Fis7uQ1O56h6tgYNt7Qtp2CBrxorn0XcW1TAJh7zVts0NtrZtpNN1p6vOyD8jy-HGhrVT1hBfNkqYG2BswlsM5c=w1010-h1346-s-no-gm?authuser=0"
+,"https://lh3.googleusercontent.com/pw/AP1GczPxBoFiJJF6UPSfw5xJzB52UdoTl-zkBO5dPFdPF4jgiFvyw7cYhF-hwDTULilMFweY3y5X_eXHxcs36cmUHgVe5csZMCpZiGDGbzJBULY85GUWvdLvMoxKPHA8uifzN4vhAeOWuy0u_Kw02A6rHrL7=w1010-h1346-s-no-gm?authuser=0"
+,"https://lh3.googleusercontent.com/pw/AP1GczMWbfp0HmGvjs4JKhsa6yZCWmHqYfXCksDEdmj4QAD5WkFwCl17A88rgPm4G9HeUuIxIE96N5yRivUfb7bk73HV1uNbgd6I3IiL8FmSl6Nmt-im_Y5SQMyUV4mABBzZzOXcx_WubHPfK_7TQVTh9E2f=w1277-h957-s-no-gm?authuser=0"
+,"https://lh3.googleusercontent.com/pw/AP1GczPSJRjkOjPYSZP6mO_DyxR6fzLpDM8qHVBLAkLYwVhz_LAfnRGEOJZ9mLQyV6q1Il4If4f4OD4EWA4JLQb7tfDLRlni4rqRha5gCtiyML6mVW8pThB5j4zSIE6OVy3xFzi4rTDLKZcczi9uGKjEVSPv=w721-h960-s-no-gm?authuser=0"
+,"https://lh3.googleusercontent.com/pw/AP1GczO1l3TAB_I3GujR41o8j2dx-DryWSw9prCb4857NeHJHtLp5Up1ixZVwABOiU6OfOYHyOaWLsV0xH_vJVlx44-Fmn7tB0IYFtf_xLOrTzG6ijxaa0H1px_Tubx0Qbg91LgaXpmz3bG_fYLOzT5hyf5X=w1277-h957-s-no-gm?authuser=0"
+,"https://lh3.googleusercontent.com/pw/AP1GczM9-1Y-NHr7cY3kKc2jx7w3a7MV8jA6kA5NXVyjE7DilJI5RzuyDdpIeeguOUnKRRBG4oIK-mJrNuCWuFzea6cGhqTXwrNT2lDTJxsIWlEueXfJe0QkWzyMUkcoa-JFnH7JOCwLbo_Mmd_mYZ2iQCmo=w1010-h1346-s-no-gm?authuser=0"
+,"https://lh3.googleusercontent.com/pw/AP1GczMXEulYxFYaArBz2KEvFrkDhyTEt9cpw9WjX1gfTT_2JTkSM4WuTnRIttq0DtnH4bwbfBQiJWlTvzcDrwodDfGwcvKPaQdqiois710KBA8R7hfGR-cZi-U5BawCTWXpnSLuIMCIYcbqDKUz-O3UZDSC=w1010-h1346-s-no-gm?authuser=0"
+,"https://lh3.googleusercontent.com/pw/AP1GczNJd_cDRtGRgCerWq1KVzKNapNAlspT5mZj-mdOFpzUnGKKmG7kTCJQPIDlRdzXM36J5vF3mHsQKDSFPI7yQSr_SkZaaZRImj2_wMYm7toWDTgpxrvc85FazoSWpTnPUljrmtF35F_OLcFCmlC_Zry7=w1010-h1346-s-no-gm?authuser=0"
+,"https://lh3.googleusercontent.com/pw/AP1GczOKOzAVJIuRDN0VNxaSLNH5V0DeXXFKoNO9YoTQw1yt_z8gj7IR0TYtGeNVY-0MSkPRRtmENq2R1GGKbEY6_lQSl3yihRMpE7o7nZ5PcOlc1H4XuxZuc60hEIzAwR_Wqws71z2sGkAo8QDKUqW1htDJ=w1010-h1346-s-no-gm?authuser=0"
+,"https://lh3.googleusercontent.com/pw/AP1GczMw8L3wILyc3Ffq7jmx6utWFF75FM8CeZ5WDoylns2LfpesgdD1pxKGiYpYPS0_5nhNI2Xfaj7GD8fcZea-O9We773W_7hpyawBkZ1Av6-9fdTwK4P-5sa9T7lksQzFqyDfj2nyJdTHIgC_8xWH45Sm=w1010-h1346-s-no-gm?authuser=0"
+,"https://lh3.googleusercontent.com/pw/AP1GczPMeMdouCrTUDyK4HFYtXq3E3ckuNKCFPjmbOVQ_Gdqgp1WqksENWhHfgi4mvG3ZyNvv3aynUWSqDnWd6unR_6LJco5OtQoRyp4jSwByCdMWr2rgQLNTdMLcSIH4fiFzKeC3iJ01Yb6n5A3b3DLq4ri=w1010-h1346-s-no-gm?authuser=0"
+,"https://lh3.googleusercontent.com/pw/AP1GczOM_fcpLlfrOu26K1AaVzFOxwxvzPmA_OX15L-URpfUqGJC_tgBdJF8XqyMw9mFgtl_G6pbZyXDNilTo-T7z8it1qsZ-pqTRLlJ2CeiKJDf3Xj0jARZsNTcNZI5hcP76v0LlOFXegAbEW39hUwGRt2y=w1010-h1346-s-no-gm?authuser=0"
+,"https://lh3.googleusercontent.com/pw/AP1GczP18aZCY9KRadMg2wugChRDHqI9MgkxtbO9rBRQDPzGw4gZy4zjgZpAEYlvgLU43HxldbT86xsFR4eKRcYl41RYz6KRnJFzDjEn4vE6_wdFMPBfSQwPaZz0Wo8xma9EdOdFTALY33KQabTqXOk3Onoj=w1010-h1346-s-no-gm?authuser=0"
+,"https://lh3.googleusercontent.com/pw/AP1GczPviGVRmw48wXyJz94mUAG9A3XuGPTD_Kem6_m-We5QznxLuaTHYlMQxlZFY4egh_HgtwP3ev4DuhHmccXDO__D40Dsbhb_y3bcoV1dyZ7oB0svipJqveZcTnX1btb0icNQpyRy7kWqdi_fpZv6kAx1=w1010-h1346-s-no-gm?authuser=0"
+,"https://lh3.googleusercontent.com/pw/AP1GczMmbmBulyTTPc62RZfmOhXZ6TpH5vVw88kxBQpeIvbF8-oIMyl5uu8MRu2KKEsTvSIlagz58_A1J5IOXz69jk3Svvrr2sxmaLPnv9LhyjrIV23CyfKkpR4ESovT9FdKEzxhNe5W7YNGvEtelR4rI3IX=w1277-h957-s-no-gm?authuser=0"
+,"https://lh3.googleusercontent.com/pw/AP1GczNtXsyoRv3Aa1YeQTK-pxJuZj00feJxyC_vtO5BvJVph4UMgOxvA4EdeDJDO6SD2sobqe8f-_Abq97gy2DdEzTPsRpsSQ1EgEj3WpqEgGYYsdyrNdbnTdOS2mhHl7Kg3SW0L67N3eyH-ySsp8Pk2hg0=w1010-h1346-s-no-gm?authuser=0"
+,"https://lh3.googleusercontent.com/pw/AP1GczPN0xlodK5ud3X5jgYEolEAvoiHx1dJStjukgDbOspsX9kqwe10SQQAPZkviTivin91_3Lk3bB55zPEixv4ftgTBNk4vOXI6r901dxXNp7n65y_Vyg0nloUDuiPS972psRDVzUUz99P4v9sSDPU3Gkg=w1010-h1346-s-no-gm?authuser=0"
+,"https://lh3.googleusercontent.com/pw/AP1GczNtfNIi_xSZkzmNhCM_8Rp2hScACiKh2dfRlhzMhp_FJvABpmAPf3sjPWkbT38U_W5uP5QcU43OX6AFHV2KcmaUAiR1DSy-fG19GF9UyCh5hGIaTe2NojSqsG0cEZlYjoe0_ZJEFFSzWIjpjObEd4WW=w1010-h1346-s-no-gm?authuser=0"
+,"https://lh3.googleusercontent.com/pw/AP1GczO9HswDwYdoAOpW5J5prVFrcz_BTFKehc0VpWs-lLl9z6HePCPguyYCDMAYabeCJr9lGySUAm_gOS2HGT_tsn5YCrtakfW6nlB7UFJYdoTpccE_T5OAiD4n5zfKDhrJ8TOGrPTUa3ZDp0-HIyBdXfkl=w1010-h1346-s-no-gm?authuser=0"
+,"https://lh3.googleusercontent.com/pw/AP1GczMvVMp_wjIzgtLCoLRsWyXUw-4C1UebkIQk4KlpEYDSikWcL8BD7VXHmVvyKWQuXNW0ReO-IqgfprTtkou8CN4Afdi9M4ZsobCJea3-tMZVqKfP_UE43_P8hkgvSgaADcJZVaXAm8YbxyUj6rWhuMxR=w1010-h1346-s-no-gm?authuser=0"
+,"https://lh3.googleusercontent.com/pw/AP1GczOlp9UbhhPKieTl3TJIDQwRoybe2MK0GIdgbUkM_jMBZ09Ef2xpBSd2pKRnhKRUVKc31g-BD3wbof9qbQcRGgSTJ6ydvjR1XHAZl4nwNcf1CD6jRr4EcNuxIB3-onQDhzUN33CwkHdzO9Y9RHuyJGHW=w1010-h1346-s-no-gm?authuser=0"
+,"https://lh3.googleusercontent.com/pw/AP1GczM-oDMhuvtiLmZnqKph7iLypSI7c6HLRA-Lji1wW_98nger0sMpTJzNhMPVDCXnV48DH5AAa2_SyRlTrN8NQQR9CxM_-FkmyL3gVjDUiZKJa8p0XtsFxaeaHxWIRLirtSADnK6Kt9aT1zQ6sl9o7y5T=w1010-h1346-s-no-gm?authuser=0"
+,"https://lh3.googleusercontent.com/pw/AP1GczP0-DfwyXp0dn-a7E6d2iDWh7DIqP4KstNlnKVJy2gzlXArOzVA721dxnErl7h-tO2-gnxkCKCRSif7SNWuEsvY-r2Mr3WRYaQGS0VR2xSAI8nee4Yn89TmpgwMe2i5b_pe_Q-TkMMaFEx4MMtLt-C-=w1010-h1346-s-no-gm?authuser=0"
+,"https://lh3.googleusercontent.com/pw/AP1GczOSxHQz0NQyakzaVHuP9wxHAzaloMjc3poeQvGu02gSjW4uEHqn-oce3dcj-qNuByixaYCg8a90_SQwmdRJ0BptKhcv0nTCRjtGIBk7t-32zeehE_qBHWuO7eTg8lg0bqevNdldyEVPV7m1nHVkqakh=w1010-h1346-s-no-gm?authuser=0"
+]
+col1, col2 = st.columns([1,3])
+with col1:
+    st.markdown("""
+    <div class='message'>
+    가을, 겨울, 봄, 여름 다시 가을
+    </div>
+    """, unsafe_allow_html=True)
+with col2:
+    with st.expander("🍁"):
+        html_blocks = ['<div class="gallery">']
+        for img, cap in zip(imgs, caps):
+            html_blocks.append(
+                '<div class="gallery-item">'
+                '<img src="' + img + '" alt="' + cap + '">'
+                '</div>'
+            )
+        html_blocks.append('</div>')
+        
+        gallery_html = "\n".join(html_blocks)
+        st.markdown(gallery_html, unsafe_allow_html=True)
+
+st.divider()
+
 # 편지 섹션
 st.markdown("## 💌 전하고 싶은 말")
 st.markdown("""
 <div class='message'>
-너와 함께한 모든 순간이 선물 같아.  
-앞으로도 같은 하늘 아래,  
-같은 길을 걸어가자.  
+너와 함께한 모든 순간이 선물 같아. 
 사랑해 ❤️
 </div>
 """, unsafe_allow_html=True)
