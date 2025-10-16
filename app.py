@@ -120,30 +120,28 @@ caps = ["처음 같이 찍은 사진", "처음 받은 선물", "처음 해준 �
 ,"첫 드라이브","최애사진","처음 같이 보낸 밤","크리스마스","커플템(내가 따라삼)","84일.","죽어가는 원동연","시즌 종료","속초최고",
 "그녀는 대게마녀","반차를 제물로 여자친구 소환","200일","옷뺌김","내인생최고야장","주말농장부부느낌쓰","21세기 현대미술의 역사","2025년 역대급 여름"
 ,"음식 사라지기 1분 20초전","그녀의 최애 캐릭은 미피","저 집은 얼마일까?","드디어..! 드디어..!","멋쟁이들","별들의기침","낭만 미쳤다잉"
-,"톰하디를 보고 난 그녀","배드민턴","토끼 반지","핸드폰 사진","유독 이쁜 날(항상 이쁘지만)"
+,"톰하디를 보고 난 그녀","배드민턴","토끼 반지","어쩌다 보니 피크닉","유독 이쁜 날(항상 이쁘지만)"
 ,"불꽃놀이"
 ,"또산공원"
 ,"말괄량이 혜정"
-,"음 오늘 좀 이쁜걸~?"]
-col1, col2 = st.columns([1,3])
-with col1:
-    st.markdown("""
-    <div class='message'>
-    가을, 겨울, 봄, 여름<br> 그리고 다시 가을
-    </div>
-    """, unsafe_allow_html=True)
-with col2:
-    with st.expander("🍁"):
-        html_blocks = ['<div class="gallery">']
-        for img, cap in zip(imgs, caps):
-            html_blocks.append(
-                '<div class="gallery-item">'
-                '<img src="' + img + '" alt="' + cap + '">'
-                '<div class="caption">' + cap + '</div>'
-                '</div>'
-            )
-        gallery_html = "\n".join(html_blocks)
-        st.markdown(gallery_html, unsafe_allow_html=True)
+,"음 오늘 맘에 드는걸~?"]
+
+st.markdown("""
+<div class='message'>
+가을, 겨울, 봄, 여름<br> 그리고 다시 가을
+</div>
+""", unsafe_allow_html=True)
+with st.expander("🍁"):
+    html_blocks = ['<div class="gallery">']
+    for img, cap in zip(imgs, caps):
+        html_blocks.append(
+            '<div class="gallery-item">'
+            '<img src="' + img + '" alt="' + cap + '">'
+            '<div class="caption">' + cap + '</div>'
+            '</div>'
+        )
+    gallery_html = "\n".join(html_blocks)
+    st.markdown(gallery_html, unsafe_allow_html=True)
 
 st.divider()
 
@@ -175,26 +173,25 @@ imgs = [
 
 caps = [ '0' for i in range(len(imgs))]
 
-col1, col2 = st.columns([1,3])
-with col1:
-    st.markdown("""
-    <div class='message'>
-    어떤 음식도 너랑 먹으면<br>미슐랭 쓰리스타
-    </div>
-    """, unsafe_allow_html=True)
-with col2:
-    with st.expander("🐷"):
-        html_blocks = ['<div class="gallery">']
-        for img, cap in zip(imgs, caps):
-            html_blocks.append(
-                '<div class="gallery-item">'
-                '<img src="' + img + '" >'
-                '</div>'
-            )
-        html_blocks.append('</div>')
-        
-        gallery_html = "\n".join(html_blocks)
-        st.markdown(gallery_html, unsafe_allow_html=True)
+st.markdown("""
+<div class='message'>
+어떤 음식도 너랑 먹으면<br>미슐랭 쓰리스타
+</div>
+""", unsafe_allow_html=True)
+
+with st.expander("🐷"):
+    html_blocks = ['<div class="gallery">']
+    for img, cap in zip(imgs, caps):
+        html_blocks.append(
+            '<div class="gallery-item">'
+            '<img src="' + img + '" >'
+            '</div>'
+        )
+    html_blocks.append('</div>')
+    
+    gallery_html = "\n".join(html_blocks)
+    st.markdown(gallery_html, unsafe_allow_html=True)
+
 
 
 st.divider()
@@ -211,26 +208,25 @@ imgs = [
 ,"https://lh3.googleusercontent.com/pw/AP1GczNWVnAE94f2rSMoccav5cJjiZQ_8Ic48AH2_99yceL7QFnBwvoMbENLIoJ6aFQBtm9ar2LmVx53_TpneQYR1NkFzFNs4GpDiaOCzo-wYFhPSTpZSEPf1cEA4ltahLDtx5U3WlJLpJPeKQ6bXLoUJGt0=w903-h1346-s-no-gm?authuser=0"
 ,"https://lh3.googleusercontent.com/pw/AP1GczN7ZRYWF2_BehyULArMM5pdohGqGYw5YYeCOEXp-M4bs7FWkJNz0jdgqbo8u_ThNUY6Gw09Khk8_yM9nTNsno4I0C40NeaDW9xlZsr-UYK2rPUbaa2aWDgexnwjFqu2qHo7P6DF3zinrpJLjIKKWzzC=w897-h1346-s-no-gm?authuser=0"
 ]
-col1, col2 = st.columns([1,3])
-with col1:
-    st.markdown("""
-    <div class='message'>
-    인생은 육천오백이십사컷쯤
-    </div>
-    """, unsafe_allow_html=True)
-with col2:
-    with st.expander("📷"):
-        html_blocks = ['<div class="gallery">']
-        for img, cap in zip(imgs, caps):
-            html_blocks.append(
-                '<div class="gallery-item">'
-                '<img src="' + img + '" >'
-                '</div>'
-            )
-        html_blocks.append('</div>')
-        
-        gallery_html = "\n".join(html_blocks)
-        st.markdown(gallery_html, unsafe_allow_html=True)
+
+st.markdown("""
+<div class='message'>
+인생은 육천오백이십사컷쯤
+</div>
+""", unsafe_allow_html=True)
+
+with st.expander("📷"):
+    html_blocks = ['<div class="gallery">']
+    for img, cap in zip(imgs, caps):
+        html_blocks.append(
+            '<div class="gallery-item">'
+            '<img src="' + img + '" >'
+            '</div>'
+        )
+    html_blocks.append('</div>')
+    
+    gallery_html = "\n".join(html_blocks)
+    st.markdown(gallery_html, unsafe_allow_html=True)
 
 st.divider()
 
