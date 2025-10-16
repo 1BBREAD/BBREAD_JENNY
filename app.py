@@ -11,7 +11,7 @@ st.markdown("""
 <style>
 body { background-color: #fff0f5; }
 .title { text-align: center; font-size: 48px; color: #ff4b8b; font-weight: bold; margin-top: 40px; }
-.subtitle { text-align: center; font-size: 22px; color: #555; margin-bottom: 40px; }
+.subtitle { text-align: center; font-size: 22px; color: #ff4b8b; margin-bottom: 40px; }
 .message { font-size: 20px; text-align: center; color: #333; margin: 20px 60px; line-height: 1.6; }
 .footer { text-align: center; color: #888; margin-top: 60px; }
 </style>
@@ -38,7 +38,7 @@ music_url = "https://drive.google.com/uc?id=여기에_파일ID4"
 st.image(main_photo_url, caption="💖", use_container_width=True)
 
 st.markdown("""<div class='message'>멀리 있으면 멀어서 보고 싶고,<br> 옆에 있으면 가까이서 보고 싶은 것.<br>
-\n그게 너다.  - 원동연</div> """, unsafe_allow_html=True)
+그게 너다.  <br>- 원동연</div> """, unsafe_allow_html=True)
 
 # 배경음악
 st.markdown(f"""
@@ -211,7 +211,7 @@ imgs = [
 
 st.markdown("""
 <div class='message'>
-인생은 육천오백이십사컷쯤
+인생은 육천오백이십네컷사진
 </div>
 """, unsafe_allow_html=True)
 
@@ -232,12 +232,9 @@ st.divider()
 
 
 # 편지 섹션
-st.markdown("## 💌")
+st.markdown("<div class='title'>💌</div>", unsafe_allow_html=True)
 st.markdown("""
 <div class='message'>
-너와 함께한 모든 순간이 선물 같아. 
-사랑해 ❤️
+너와 함께한 모든 순간이 잊지 못할 선물이야. <br> 함께해줘서 고마워. 사랑해 ❤️
 </div>
 """, unsafe_allow_html=True)
-
-st.markdown("<div class='footer'>- From 당신의 이름 -</div>", unsafe_allow_html=True)
