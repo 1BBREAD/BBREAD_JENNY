@@ -213,6 +213,8 @@ imgs = [
 ,"https://lh3.googleusercontent.com/pw/AP1GczP0-DfwyXp0dn-a7E6d2iDWh7DIqP4KstNlnKVJy2gzlXArOzVA721dxnErl7h-tO2-gnxkCKCRSif7SNWuEsvY-r2Mr3WRYaQGS0VR2xSAI8nee4Yn89TmpgwMe2i5b_pe_Q-TkMMaFEx4MMtLt-C-=w1010-h1346-s-no-gm?authuser=0"
 ,"https://lh3.googleusercontent.com/pw/AP1GczOSxHQz0NQyakzaVHuP9wxHAzaloMjc3poeQvGu02gSjW4uEHqn-oce3dcj-qNuByixaYCg8a90_SQwmdRJ0BptKhcv0nTCRjtGIBk7t-32zeehE_qBHWuO7eTg8lg0bqevNdldyEVPV7m1nHVkqakh=w1010-h1346-s-no-gm?authuser=0"
 ]
+
+caps = [0 for i in range(len(imgs))]
 col1, col2 = st.columns([1,3])
 with col1:
     st.markdown("""
