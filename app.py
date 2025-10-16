@@ -32,7 +32,7 @@ photo1_url = "https://drive.google.com/uc?id=여기에_파일ID2"
 photo2_url = "https://drive.google.com/uc?id=여기에_파일ID3"
 
 # 음악 파일 (mp3)
-music_url = "https://drive.google.com/uc?id=여기에_파일ID4"
+music_url = "https://drive.google.com/uc?export=download&id=15O-D5bVK8WgMXkVkAMLjOMQ1buFW89cX"
 
 # 인트로 사진
 st.image(main_photo_url, caption="💖", use_container_width=True)
