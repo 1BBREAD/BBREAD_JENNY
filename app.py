@@ -163,8 +163,7 @@ with col2:
         for img, cap in zip(imgs, caps):
             html_blocks.append(
                 '<div class="gallery-item">'
-                '<img src="' + img + '" alt="' + cap + '">'
-                '<div class="caption">' + cap + '</div>'
+                '<img src="' + img + '" >'
                 '</div>'
             )
         html_blocks.append('</div>')
@@ -230,11 +229,10 @@ with col2:
         for img, cap in zip(imgs, caps):
             html_blocks.append(
                 '<div class="gallery-item">'
-                '<img src="' + img + '" >'
+                '<img src="' + img + '" alt="' + cap + '">'
+                '<div class="caption">' + cap + '</div>'
                 '</div>'
             )
-        html_blocks.append('</div>')
-        
         gallery_html = "\n".join(html_blocks)
         st.markdown(gallery_html, unsafe_allow_html=True)
 
