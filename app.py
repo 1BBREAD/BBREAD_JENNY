@@ -102,8 +102,7 @@ imgs = [
 ,"https://lh3.googleusercontent.com/pw/AP1GczPmuJxWZ44Vemu0XwwmwbdFWuHJoY5EihlOPIps_IVd46YmKusjKiMbMx-LSXzr_ZybNWH5a5vsZt2Cs-L3YiiLULp7hsE4pqL-Q1C4e0n1IwHedAJpRweuHdLxH9C_Ly0-1n9Ft3OELZLGKtG4J60n=w1010-h1346-s-no-gm?authuser=0"
 ]
 
-caps = [ 0 for i in range(len(imgs))
-]
+caps = [ '0' for i in range(len(imgs))]
 
 col1, col2 = st.columns([1,3])
 with col1:
