@@ -226,7 +226,7 @@ with col2:
         for img, cap in zip(imgs, caps):
             html_blocks.append(
                 '<div class="gallery-item">'
-                '<img src="' + img + '" alt="' + cap + '">'
+                '<img src="' + img + '" >'
                 '</div>'
             )
         html_blocks.append('</div>')
