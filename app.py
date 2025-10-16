@@ -179,19 +179,13 @@ imgs = [
 ,"https://lh3.googleusercontent.com/pw/AP1GczM2jtRlP3ZO6fJDJJqXOM_7cSQrtFwhaiVc_PO_CRH1JTvy5KIJ59S3PUG4AcKMYVEbzjsDM_qboAVU4eltm05-okXikcSuGIf3M8_imp9b41ycu6dHNBuZvD68LBz3Opp5cVx4tS2pohse5EZjQzQy=w1277-h1277-s-no-gm?authuser=0"
 ,"https://lh3.googleusercontent.com/pw/AP1GczO5YL1yzsdq9HdBVAxLKn5Kf7d_ozH2EpNFb1BSP7RVinoHJObJRaurrfxcy7hgkW9uPpQM2Ew1NMjifDTYylhKLQ5_7jG5IffsKgl8-ar6owypv1BoEAtcSIgAKzwSSjl3_t0kvvpvGDpw0LywqOyf=w1010-h1346-s-no-gm?authuser=0"
 ,"https://lh3.googleusercontent.com/pw/AP1GczNLxN4FFlvi9CatPrD472wDurrlcSNdvC8Q-zvDDvSXWUjjmvLVrTemd094gexi3OhtITRBZNXSJKDce1o5P0BLPlbC2SizqCerraSoETNzFvnp22lp-gduTbxqXkqBVe5V3-b6feRQW7Yy8bA8h86V=w1010-h1346-s-no-gm?authuser=0"
-,"https://lh3.googleusercontent.com/pw/AP1GczO5RIobH-ny7ITTIfKfFz65KQQDxucHEtFPKkiG8ubkiCBdI2q-2zMyLXTaUeT3Garv80Wv4veYm27cijn-_Yae7RAG0-Uo3n3OUZY1k_uRmtx6MntM8iCQJmTVYkRP67B5tDb9CwKxglzqDLXEUth2=w1277-h1277-s-no-gm?authuser=0"
 ,"https://lh3.googleusercontent.com/pw/AP1GczMQF480GUaXDGi7hJ67gNOTimVaVH-LtRTQZG1UozX8-dLikm_Q1zam5c8_MN2tc6zY163pRYjCEAf6vB7E4csuNZyiu-8xB-DxdCLI48yOI6BIi_Kc4Gd_DgEN5AWmVOPDB3LyvkiAibqGrI2S-SqC=w1010-h1346-s-no-gm?authuser=0"
 ,"https://lh3.googleusercontent.com/pw/AP1GczMOboI6xIdUzCS9JcwODukZVqMJ9butsnbFv_f7xXoBKrOigDzQ7Oh8milPntIU9ASTcqrKXxJHxVMgb6SHMkDcRD2MPplDRLjcwRBcddUdqWk67O6nPoTwXqG6DKRg1KXwKAPcDNibW4phta-F-faq=w1277-h1277-s-no-gm?authuser=0"
-,"https://lh3.googleusercontent.comhttps//lh3.googleusercontent.com/pw/AP1GczNI8f-89e2JCnqx1mdnY7ckt7H44MbmCZx_Y2dMSr_WQsYc4Pr9PX10KPztgsV3BFwlEpZFyRdy7V6yZ4aLr9R8i98HV3EZ1Qv12MsxTrMPjqsUq_PdD-pZt9NuM0NVSPx_RtW5ydTj2yvRNn_izoNq=w758-h1346-s-no-gm?authuser=0"
 ,"https://lh3.googleusercontent.com/pw/AP1GczMkp0nC9cXu_KcWfo36XOh_ze7RBwoBWqFC1c-rfdLIs1vSlUxo0dD2NZhlV981auoaVJsdfpJL4ls_fswgxcxfND9qMM6MI9yEaK2LFHe-gttzkhWlcEH7aJH-fzfQrYfCZDR_aPzHIBVbMKSKstcU=w1277-h957-s-no-gm?authuser=0"
-,"https://lh3.googleusercontent.com/pw/AP1GczMkp0nC9cXu_KcWfo36https://lh3.googleusercontent.com/pw/AP1GczOr_7sLp6928iFjT2fsHk4KJ-DBj9K_-czI_dAwOxidM6Jo4WqnMzhYVnGm1q-LTgu1V-4n93sIYId5e2l223IZdURAa-mKfihGgQCcjdrTuLAMTuhWrGWgYSaPzdIzVhaPLcaooNr06pu9g2A9Y56i=w1277-h1277-s-no-gm?authuser=0"
-,"https://lh3.googleusercontent.com/pw/AP1GczN9h9jpJNXpgxC1KzWjR96ul4DtAZNChXrbgCLtstb-Qr04JewGVVhDeCbMcAW4B36fx246FwA_OJdgfXNUGExuMYnbccQuXeD_ljipSXgubPrvv2OxrbJH_0d9nn-bj_Uk43fKREgbDwOL34Sa7a1u=w1010-h1346-s-no-gm?authuser=0"
-,"https://lh3.googleusercontent.com/pw/AP1GczNsL1yPv5MqUYk-b1IMAgicjDSPWeNIUsSyZ9fLBCGCForvMEM1MLJNT7ZHTGLWiHrWIdQQFv6uvgcdBGbpFz9rxvGAnJJnAiwafJLgArnmHZ_ujDFIHf5iT1Ptc4677Q7AU050GUU12zQst73jO6w-=w1010-h1346-s-no-gm?authuser=0"
+,"https://lh3.googleusercontent.com/pw/AP1GczOr_7sLp6928iFjT2fsHk4KJ-DBj9K_-czI_dAwOxidM6Jo4WqnMzhYVnGm1q-LTgu1V-4n93sIYId5e2l223IZdURAa-mKfihGgQCcjdrTuLAMTuhWrGWgYSaPzdIzVhaPLcaooNr06pu9g2A9Y56i=w1064-h1064-s-no-gm?authuser=0"
 ,"https://lh3.googleusercontent.com/pw/AP1GczO2Hv5YHuKYi-czyjXBrCKO9y9zxojzELSF4OuvkjEr2YGwD12fTu5lu58zWv2-zrUsryI6Swdfl_JA2RhSk0QlN9qRtJ0rWaZAnmybd696hejgFoOtbDPRVfHGylyIj1AwB5C_V8sI1HMvEp9DWwIR=w1277-h957-s-no-gm?authuser=0"
-,"https://lh3.googleusercontent.com/pw/AP1GczOEtydW9CnGwc-T5QHT_hFtcedsYF3FPh1CzdRTUzsdpQ9EeajwkAnqBbFBX4rK5Fis7uQ1O56h6tgYNt7Qtp2CBrxorn0XcW1TAJh7zVts0NtrZtpNN1p6vOyD8jy-HGhrVT1hBfNkqYG2BswlsM5c=w1010-h1346-s-no-gm?authuser=0"
 ,"https://lh3.googleusercontent.com/pw/AP1GczPxBoFiJJF6UPSfw5xJzB52UdoTl-zkBO5dPFdPF4jgiFvyw7cYhF-hwDTULilMFweY3y5X_eXHxcs36cmUHgVe5csZMCpZiGDGbzJBULY85GUWvdLvMoxKPHA8uifzN4vhAeOWuy0u_Kw02A6rHrL7=w1010-h1346-s-no-gm?authuser=0"
 ,"https://lh3.googleusercontent.com/pw/AP1GczMWbfp0HmGvjs4JKhsa6yZCWmHqYfXCksDEdmj4QAD5WkFwCl17A88rgPm4G9HeUuIxIE96N5yRivUfb7bk73HV1uNbgd6I3IiL8FmSl6Nmt-im_Y5SQMyUV4mABBzZzOXcx_WubHPfK_7TQVTh9E2f=w1277-h957-s-no-gm?authuser=0"
-,"https://lh3.googleusercontent.com/pw/AP1GczPSJRjkOjPYSZP6mO_DyxR6fzLpDM8qHVBLAkLYwVhz_LAfnRGEOJZ9mLQyV6q1Il4If4f4OD4EWA4JLQb7tfDLRlni4rqRha5gCtiyML6mVW8pThB5j4zSIE6OVy3xFzi4rTDLKZcczi9uGKjEVSPv=w721-h960-s-no-gm?authuser=0"
 ,"https://lh3.googleusercontent.com/pw/AP1GczO1l3TAB_I3GujR41o8j2dx-DryWSw9prCb4857NeHJHtLp5Up1ixZVwABOiU6OfOYHyOaWLsV0xH_vJVlx44-Fmn7tB0IYFtf_xLOrTzG6ijxaa0H1px_Tubx0Qbg91LgaXpmz3bG_fYLOzT5hyf5X=w1277-h957-s-no-gm?authuser=0"
 ,"https://lh3.googleusercontent.com/pw/AP1GczM9-1Y-NHr7cY3kKc2jx7w3a7MV8jA6kA5NXVyjE7DilJI5RzuyDdpIeeguOUnKRRBG4oIK-mJrNuCWuFzea6cGhqTXwrNT2lDTJxsIWlEueXfJe0QkWzyMUkcoa-JFnH7JOCwLbo_Mmd_mYZ2iQCmo=w1010-h1346-s-no-gm?authuser=0"
 ,"https://lh3.googleusercontent.com/pw/AP1GczMXEulYxFYaArBz2KEvFrkDhyTEt9cpw9WjX1gfTT_2JTkSM4WuTnRIttq0DtnH4bwbfBQiJWlTvzcDrwodDfGwcvKPaQdqiois710KBA8R7hfGR-cZi-U5BawCTWXpnSLuIMCIYcbqDKUz-O3UZDSC=w1010-h1346-s-no-gm?authuser=0"
@@ -214,7 +208,15 @@ imgs = [
 ,"https://lh3.googleusercontent.com/pw/AP1GczOSxHQz0NQyakzaVHuP9wxHAzaloMjc3poeQvGu02gSjW4uEHqn-oce3dcj-qNuByixaYCg8a90_SQwmdRJ0BptKhcv0nTCRjtGIBk7t-32zeehE_qBHWuO7eTg8lg0bqevNdldyEVPV7m1nHVkqakh=w1010-h1346-s-no-gm?authuser=0"
 ]
 
-caps = [0 for i in range(len(imgs))]
+caps = ["처음 같이 찍은 사진", "처음 받은 선물", "처음 해준 요리(?)","인상깊은 남한산성"
+,"첫 드라이브","최애사진","처음 같이 보낸 밤","크리스마스","커플템(내가 따라삼)","84일.","죽어가는 원동연","시즌 종료","속초최고",
+"그녀는 대게마녀","반차를 제물로 여자친구 소환","200일","옷뺌김","내인생최고야장","주말농장부부느낌쓰","21세기 현대미술의 역사","2025년 역대급 여름"
+,"음식 사라지기 1분 20초전","그녀의 최애 캐릭은 미피","저 집은 얼마일까?","드디어..! 드디어..!","멋쟁이들","별들의기침","낭만 미쳤다잉"
+,"톰하디를 보고 난 그녀","배드민턴","토끼 반지","핸드폰 사진","유독 이쁜 날(항상 이쁘지만)"
+,"불꽃놀이"
+,"또산공원"
+,"말괄량이 혜정"
+,"음 오늘 좀 이쁜걸~?"]
 col1, col2 = st.columns([1,3])
 with col1:
     st.markdown("""
@@ -238,8 +240,9 @@ with col2:
 
 st.divider()
 
+
 # 편지 섹션
-st.markdown("## 💌 전하고 싶은 말")
+st.markdown("## 💌")
 st.markdown("""
 <div class='message'>
 너와 함께한 모든 순간이 선물 같아. 
